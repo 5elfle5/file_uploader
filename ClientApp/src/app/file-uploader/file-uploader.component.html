@@ -1,0 +1,14 @@
+<div class="" style="margin-bottom:15px;">
+  <div class="">
+    <input type="file" 
+    #file 
+    placeholder="Choose file" 
+    (change)="uploadFile(file.files)" style="display:none;">
+    <button type="button" class="" (click)="file.click()">Upload File</button>
+  </div>
+  <div class="">
+    <span class="upload" *ngIf="message">
+      {{message}}
+    </span>
+  </div>
+</div>
